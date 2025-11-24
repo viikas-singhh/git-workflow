@@ -1,0 +1,28 @@
+<form id="loginForm" novalidate>
+  <div class="field">
+    <label for="email">Email address</label>
+    <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" />
+  </div>
+
+  <div class="field">
+    <label for="password">Password</label>
+    <input id="password" name="password" type="password" autocomplete="current-password" required placeholder="Enter your password" />
+  </div>
+
+  <div class="row" style="align-items:center">
+    <label class="checkbox">
+      <input id="remember" name="remember" type="checkbox" />
+      <span>Remember me</span>
+    </label>
+    <a class="muted-link" href="#" onclick="alert('Forgot password flow not implemented');return false">Forgot?</a>
+  </div>
+
+  <div class="errors" id="error" aria-live="polite"></div>
+
+  <button type="submit">Sign in</button>
+</form>
+
+<footer>
+  <span style="color:var(--muted)">Don't have an account? </span>
+  <a href="#" class="muted-link" onclick="alert('Sign up flow not implemented');return false">Create account</a>
+</footer>
